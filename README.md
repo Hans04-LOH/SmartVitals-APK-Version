@@ -13,7 +13,6 @@ Many elderly users face daily healthcare challenges, including:
 - Lack of real-time health monitoring
 - Caregiver anxiety over elderly wellbeing
 - Difficulty accessing emergency assistance quickly
-- Limited digital tools designed for elderly-friendly use
 
 ## ✨ Key Features
 
