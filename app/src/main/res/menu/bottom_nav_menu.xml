@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_sport"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="Sport" />
+
+    <item
+        android:id="@+id/nav_scan"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Scan" />
+
+    <item
+        android:id="@+id/nav_support"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Support" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Profile" />
+
+</menu>

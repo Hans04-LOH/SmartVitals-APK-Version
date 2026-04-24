@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SmartVitals</string>
+    <string name="bluetooth_permission_denied">Bluetooth permission denied</string>
+    <string name="connected_to_device">Connected to %1$s</string>
+    <string name="device_disconnected">Disconnected</string>
+    <string name="live_heart_rate_received">Live heart rate received</string>
+    <string name="turn_on_bluetooth_first">Turn on Bluetooth first</string>
+    <string name="scanning_for_devices">Scanning for 8 seconds...</string>
+    <string name="no_ble_devices_found">No BLE devices found</string>
+    <string name="choose_wearable">Choose wearable</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="heart_rate_bpm">%1$d bpm</string>
+
+    <string name="sync_wearable_data">Sync wearable data</string>
+    <string name="health_permissions_denied">Health permissions denied</string>
+    <string name="health_connect_unavailable">Health Connect is not available on this device</string>
+    <string name="install_or_update_health_connect">Install or update Health Connect</string>
+    <string name="health_connect_error">Unable to read Health Connect data</string>
+    <string name="syncing_health_data">Syncing heart rate and steps...</string>
+    <string name="health_data_synced">Health data synced</string>
+    <string name="no_health_data_found">No heart rate or step data found</string>
+    <string name="health_connect_io_error">Health Connect read failed</string>
+    <string name="no_data_value">--</string>
+    <string name="no_data_short">--</string>
+    <string name="checking_health_permissions">Checking Health Connect permissions...</string>
+</resources>

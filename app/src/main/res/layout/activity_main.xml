@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_slate_50"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="116dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_card"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/bgHomeHolder"
+                    android:layout_width="42dp"
+                    android:layout_height="30dp"
+                    android:foregroundGravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivNavHome"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_view" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvNavHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Home"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navSport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/bgSportHolder"
+                    android:layout_width="42dp"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/ivNavSport"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_compass" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvNavSport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Sport"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navScanSlot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical"
+                android:paddingTop="38dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvNavScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navSupport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/bgSupportHolder"
+                    android:layout_width="42dp"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/ivNavSupport"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_help" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvNavSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Support"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navProfile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/bgProfileHolder"
+                    android:layout_width="42dp"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/ivNavProfile"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@android:drawable/ic_menu_manage" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvNavProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Profile"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/navScanCenter"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_scan_fab"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="12dp">
+
+            <ImageView
+                android:id="@+id/ivNavScan"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_camera"
+                app:tint="@android:color/white" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

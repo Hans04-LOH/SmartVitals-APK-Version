@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="44dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Care &amp; Support"
+                    android:textColor="#0F172A"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Emergency help and hospital services"
+                    android:textColor="#64748B"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_support_emergency_card"
+                android:elevation="6dp"
+                android:padding="18dp">
+
+                <TextView
+                    android:id="@+id/tvEmergencySmallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency assistance"
+                    android:textColor="#FFE4E6"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTestPopup"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/bg_support_transparent_btn"
+                    android:backgroundTint="@null"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="0dp"
+                    android:text="i"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEmergencyInfoBubble"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnTestPopup"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_support_white_btn"
+                    android:elevation="4dp"
+                    android:padding="12dp"
+                    android:text="When dangerous data is detected, the system will warn the user and suggest emergency help."
+                    android:textColor="#0F172A"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvEmergencyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEmergencySmallLabel"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_toStartOf="@id/btnTestPopup"
+                    android:text="Danger detection active"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEmergencyDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEmergencyTitle"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="When the system detects a dangerous condition, it triggers a warning pop-up and asks whether to make an emergency call."
+                    android:textColor="#FFF1F2"
+                    android:textSize="13sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEmergencyContact"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tvEmergencyDescription"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_support_white_btn"
+                    android:backgroundTint="@null"
+                    android:text="Emergency contact"
+                    android:textAllCaps="false"
+                    android:textColor="#DC2626"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_home_small_card"
+                    android:elevation="2dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_support_green_icon"
+                        android:padding="10dp"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:tint="#059669" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Hospital booking"
+                        android:textColor="#0F172A"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:lineSpacingExtra="2dp"
+                        android:text="Book a visit with available nearby hospitals or clinics."
+                        android:textColor="#64748B"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/btnBookNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_support_small_btn"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingStart="12dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="7dp"
+                        android:text="Book now"
+                        android:textColor="#0F172A"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_home_small_card"
+                    android:elevation="2dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_support_cyan_icon"
+                        android:padding="10dp"
+                        android:src="@android:drawable/ic_menu_info_details"
+                        app:tint="#0891B2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Check-up service"
+                        android:textColor="#0F172A"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:lineSpacingExtra="2dp"
+                        android:text="Find health screening packages and follow-up checks."
+                        android:textColor="#64748B"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/btnExplore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_support_small_btn"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:paddingStart="12dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="7dp"
+                        android:text="Explore"
+                        android:textColor="#0F172A"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_home_small_card"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick actions"
+                    android:textColor="#0F172A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/btnNearPharmacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_record_row"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_record_icon_violet"
+                        android:padding="8dp"
+                        android:src="@android:drawable/ic_menu_mylocation"
+                        app:tint="#7C3AED" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Near pharmacy"
+                            android:textColor="#0F172A"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Find nearby pharmacies on the map"
+                            android:textColor="#64748B"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open"
+                        android:textColor="#64748B"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnCallAmbulance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_record_row"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_record_icon_rose"
+                        android:padding="8dp"
+                        android:src="@android:drawable/ic_menu_call"
+                        app:tint="#E11D48" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Call ambulance"
+                            android:textColor="#0F172A"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Dial emergency ambulance support"
+                            android:textColor="#64748B"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="999"
+                        android:textColor="#64748B"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnMedicationHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_record_row"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_record_icon_amber"
+                        android:padding="8dp"
+                        android:src="@android:drawable/ic_menu_recent_history"
+                        app:tint="#D97706" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medication reminder history"
+                            android:textColor="#0F172A"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="View your medicine reminders and status"
+                            android:textColor="#64748B"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open"
+                        android:textColor="#64748B"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAiChatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_ai_robot"
+        app:backgroundTint="#7C3AED"
+        app:elevation="8dp"
+        app:tint="@android:color/white" />
+
+</FrameLayout>
